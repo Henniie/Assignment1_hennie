@@ -1,0 +1,26 @@
+---
+title: "Can Quarto Documents and the Checkpoint package help us achieve reproducibility?"
+format: pdf
+editor: visual
+bibliography: [reproducibility.bib]
+---
+
+## Abstract 3 -- 6 lines
+
+## Abstract 3 -- 6 lines
+
+## Introduction ½ page
+
+## Literature review 1 -- 2 pages
+
+## Discussion 1 -- 2 pages
+
+## Conclusion 4 -- 10 lines
+
+## Introduction ½ page
+
+## Literature review 1 -- 2 pages
+
+## Discussion 1 -- 2 pages
+
+## Conclusion 4 -- 10 lines
