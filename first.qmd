@@ -84,16 +84,11 @@ reproducibility. By adding new datasets, the changes could affect the outcome
 of a model and results. Therefore, different dataset versions and changes should
 be logged to achieve better reproducibility.
 
-The Quarto Document\'s overarching goal is to make it easier to adopt a reproducible workflow
-and using the Checkpoint package to this helps to keep track of the different R distribution versions, documentation, and contributed R packages.
+The Quarto Document\'s overarching goal is to make it easier to adopt a reproducible workflow and using the Checkpoint package to this helps to keep track of the different R distribution versions, documentation, and contributed R packages.
 
 Reproducibility should be positively affected using Quarto Document and
 the additional Checkpoint package whereas the CRAN archive contributes by avoiding
-package updates which could alter research study results, hereby considering replication
-of experiments and the specific procedures executed to achieve the reported
-results. In addition, the Quarto Document aims to enhance a collaborating publishing
-environment by providing tools for technical content which in term could be positive
-for generalizability of an effect in procedures. Also, the stability of experimental conclusions and variations of procedures could help achieve better reproducibility.
+package updates which could alter research study results, hereby considering replication of experiments and the specific procedures executed to achieve the reported results. In addition, the Quarto Document aims to enhance a collaborating publishing environment by providing tools for technical content which in term could be positive for generalizability of an effect in procedures. Also, the stability of experimental conclusions and variations of procedures could help achieve better reproducibility.
 
 **Conclusion**
 
@@ -108,13 +103,9 @@ package does indeed contribute to help achieve reproducibility.
 
 **Sources**
 
-About Quarto. Open source
-tools for scientific and technical publishing. Retrieved from <https://quarto.org/about.html>
+About Quarto. Open source tools for scientific and technical publishing. Retrieved from <https://quarto.org/about.html>
 
-checkpoint: Install
-Packages from Snapshots on the Checkpoint Server for Reproducibility. Retrieved
-from [[https://CRAN.R-project.org/package=checkpoint]{.underline}](https://CRAN.R-project.org/package=checkpoint)
+checkpoint Install Packages from Snapshots on the Checkpoint Server for Reproducibility. Retrieved from [[https://CRAN.R-project.org/package=checkpoint]{.underline}](https://CRAN.R-project.org/package=checkpoint)
 
-checkpoint: Configures R
-session to use packages as they existed on CRAN. (2022, January 29) Retrieved from https://rdrr.io/cran/checkpoint/man/checkpoint.html
+checkpoint Configures R session to use packages as they existed on CRAN (2022, January 29). Retrieved from https://rdrr.io/cran/checkpoint/man/checkpoint.html
 =======
