@@ -5,6 +5,7 @@ editor: visual
 bibliography: [reproducibility.bib]
 ---
 
+<<<<<<< HEAD
 **Abstract**
 
 Reproducibility and replication of studies and experiments an important
@@ -116,3 +117,4 @@ from [[https://CRAN.R-project.org/package=checkpoint]{.underline}](https://CRAN.
 
 checkpoint: Configures R
 session to use packages as they existed on CRAN. (2022, January 29) Retrieved from https://rdrr.io/cran/checkpoint/man/checkpoint.html
+=======
