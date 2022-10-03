@@ -1,0 +1,20 @@
+---
+title: "ag_comments"
+format: pdf
+editor: visual
+---
+
+-   Bruk tags for overskrifter.
+    Velges fra drop-down menyen der det står `Normal` i Visual mode.
+    Da får du et strukturert dokument.
+
+-   Bra innhold, men du bruker ikke siteringssystemet i RStudio.
+    Jeg har lagt inn noen siteringer og satt opp referanselisten.
+    Prøv å innarbeid noen flere siteringer i teksten.
+    Både inline og ved slutten av setning/avsnitt.
+
+-   Hvor referansenlisten skal havne styrer vi ved en div med id refs.
+    På insert menyen finner du Div... .
+    Sett inn en slik og gi den id refs så får du en referanseliste plassert der.
+
+-   Har også endret litt i YAML slik at det kommer uten som en fint formatert artikkel i både html og pdf format.

@@ -1,132 +1,104 @@
 ---
 title: "Can Quarto Documents and the Checkpoint package help us achieve reproducibility?"
-format: pdf
+format: html
+documentclass: article
+classoption: 
+  - '12pt'
+  - 'a4paper'
+author: 
+  - name: Henriette Hansen
+    affiliation: 'Master Student HVL'
 editor: visual
-bibliography: [reproducibility.bib]
+bibliography: [hh.bib, reproducibility.bib]
+abstract: 'Reproducibility and replication of studies and experiments are an important approach to gain confidence in conclusions. Quarto Documents and the Checkpoint package helps us achieve reproducibility by sharing knowledge and techniques used in procedures of studies more widespread, which contributes positive for generalizability and robustness in procedures and framework of different studies and experiments.'
 ---
 
-<<<<<<< HEAD
-**Abstract**
+## Introduction
 
-Reproducibility and replication of studies and experiments an important
-approach to gain confidence in conclusions. Quarto Document and Checkpoint
-package helps us achieve reproducibility by sharing knowledge and techniques
-used in procedures of studies more widespread, which contributes positive for 
-generalizability and robustness in procedures and framework of different 
-studies and experiments.
+The effect of reproducibility is briefly explained and studied towards the use of a Quarto Document and the Checkpoint package.
+By looking at replicability the more data and information given about the procedures of an experiment, give better reproducibility.
+To understand if the Quarto Document and Checkpoint package helps to achieve reproducibility it is discussed in the manner of generalizability, robustness and the Comprehensive R Archive Network (CRAN), which the latter is a part of the Checkpoint package.
 
-**Introduction**
+The literature review and the discussion gives an unequivocal result of the problem studied.
 
-The effect of reproducibility is briefly explained and studied towards
-the use of a Quarto Document and the Checkpoint package. By looking at
-replicability the more data and information given about the procedures of an
-experiment, give better reproducibility. To understand if the Quarto Document
-and Checkpoint package helps to achieve reproducibility it is discussed in the
-manner of generalizability, robustness and the Comprehensive R Archive Network
-(CRAN), which the latter is a part of the Checkpoint package.
+## Reproducibility
 
-The literature review and the discussion gives an unequivocal result of the 
-problem studied.
+Science advances on a foundation of discoveries.
+To gain confidence in a conclusion, reproducing an experiment is often used.
+To confirm results and conclusions from one study, the approach of replicability is often used.
+Replicability is the confirmation of results and conclusions from one study which is obtained independently with new data but the same method.
+This is considered the scientific gold standard.
 
-**Reproducibility**
+Reproducibility methods refers to the provision of enough detail about study and data so the same procedures could, in theory be repeated.
+Furthermore, obtaining the same results from an independent study whose procedures are as closely replicated to the original experiment as possible.
 
-Science advances on a foundation of discoveries. To gain confidence in
-a conclusion, reproducing an experiment is often used. To confirm results and
-conclusions from one study, the approach of replicability is often used, whereas
-the replicability is the confirmation of results and conclusions from one study
-which is obtained independently from another. This is considered the scientific
-gold standard.
+Robustness and generalizability can be used in lieu of the term reproducibility.
+Robustness refers to the stability of experimental conclusions to variations in either baseline assumptions or experimental procedures.
+Generalizability refers to the persistence of an effect in procedures different from outside of an experimental framework.
 
-Reproducibility methods refers to the provision of enough detail about study 
-and data so the same procedures could, in theory be repeated. Furthermore, 
-obtaining the same results from an independent study whose procedures are as 
-closely replicated to the original experiment as possible.
+## Quarto document and Checkpoint package
 
-Robustness and generalizability can be used in lieu of the term
-reproducibility. Robustness refers to the stability of experimental 
-conclusions to variations in either baseline assumptions or experimental 
-procedures. Generalizability refers to the persistence of an effect in 
-procedures different from outside of an experimental framework.
+The goal of a Quarto document is to make scientific and technical documents better by creating and collaborating with a writing and publishing environment with integrated tools for technical content.
 
-**Quarto document and Checkpoint package**
+Quarto aims to make it easier to adopt a reproducible workflow, overarching to replicate research and publications for a confirmation of conclusions obtained independently in different studies.
+Enhancing reproducibility requires that the code and data to create a procedure is an integrated part of the research.
 
-The goal of a Quarto document is to make scientific and technical documents 
-better by creating and collaborating with a writing and publishing 
-environment with integrated tools for technical content.
+The `checkpoint()` function aims to solve the problem of package reproducibility in R.
+Checkpoint allows to install packages as they existed on Comprehensive R Archive Network (CRAN) on a specific date like a CRAN time machine [@checkpoint].
+CRAN contains an archive of different versions of the R distribution, documentation, and contributed R packages [@repoToolkit].
 
-Quarto aims to make it easier to adopt a reproducible workflow, overarching
-to replicate research and publications for a confirmation of conclusions
-obtained independently in different studies. Enhancing reproducibility requires
-that the code and data to create a procedure is an integrated part of the
-research.
+To achieve reproducibility, the checkpoint function installs the packages required or called by the project and scripts to a local library exactly as they existed at the specific point in time.
+Only those packages are available to a specified project, thereby avoiding any package updates that came later which could have altered any results.
 
-The checkpoint () function aims to solve the problem of package
-reproducibility in R. Checkpoint allows to install packages as they existed 
-on Comprehensive R Archive Network (CRAN) on a specific date like a CRAN 
-time machine. CRAN contains an archive of different versions of the 
-R distribution, documentation, and contributed R packages.
+## Discussion
 
-To achieve reproducibility, the checkpoint function installs the packages 
-required or called by the project and scripts to a local library exactly 
-as they existed at the specific point in time. Only those packages are 
-available to a specified project, thereby avoiding any package updates 
-that came later which could have altered any results.
+Research results from one study cannot always be verified whether they will be correct or will remain correct as new information and new research becomes available [@peng_reproducible_2011].
+Therefore, reproducibility is key to help contribute to other and future research and verifying results.
+Providing transparency to the experiment will help others to understand the procedure of the research.
+Replicating experiments and achieving the same results and conclusions in one study obtained independently in another adds confirmation the conclusion.
+Furthermore, reproducibility depends on enough details and data to be replicated.Tracking and recording changes during experimentation could thereby have significant value for reproducibility.
+By adding new datasets, the changes could affect the outcome of a model and results.
+Therefore, different dataset versions and changes should be logged to achieve better reproducibility.
 
-**Discussion**
+The Quarto Document's overarching goal is to make it easier to adopt a reproducible workflow and using the Checkpoint package to this helps to keep track of the different R distribution versions, documentation, and contributed R packages [@quartoOrg].
 
-Research results from one study cannot always be verified whether they will
-be correct or will remain correct as new information and new research becomes 
-available. Therefore, reproducibility is key to help contribute to other and 
-future research and verifying results. Providing transparency to the 
-experiment will help others to understand the procedure of the research. 
-Replicating experiments and achieving the same results and conclusions in 
-one study obtained independently in another adds confirmation the conclusion. 
-Furthermore, reproducibility depends on enough details and data to be 
-replicated.Tracking and recording changes during experimentation could 
-thereby have significant value for reproducibility. By adding new datasets, 
-the changes could affect the outcome of a model and results. Therefore, 
-different dataset versions and changes should be logged to achieve better 
-reproducibility.
+Reproducibility should be positively affected using Quarto Document and the additional Checkpoint package whereas the CRAN archive contributes by avoiding package updates which could alter research study results, hereby considering replication of experiments and the specific procedures executed to achieve the reported results.
+In addition, the Quarto Document aims to enhance a collaborating publishing environment by providing tools for technical content which in term could be positive for generalizability of an effect in procedures.
+Also, the stability of experimental conclusions and variations of procedures could help achieve better reproducibility.
 
-The Quarto Document\'s overarching goal is to make it easier to adopt a 
-reproducible workflow and using the Checkpoint package to this helps to keep 
-track of the different R distribution versions, documentation, and 
-contributed R packages.
+## Conclusion
 
-Reproducibility should be positively affected using Quarto Document and
-the additional Checkpoint package whereas the CRAN archive contributes by 
-avoiding package updates which could alter research study results, hereby 
-considering replication of experiments and the specific procedures executed 
-to achieve the reported results. In addition, the Quarto Document aims to 
-enhance a collaborating publishing environment by providing tools for 
-technical content which in term could be positive for generalizability of an 
-effect in procedures. Also, the stability of experimental conclusions and 
-variations of procedures could help achieve better reproducibility.
+The overarching goal of the Quarto Document and Checkpoint package is to enhance reproducibility by making knowledge and techniques used in procedures of studies more widespread.
+As discussed, reproducibility depends on, and is better replicated the more details and information given regarding procedures and framework of an experiment.
 
-**Conclusion**
+The conclusion of the problem is therefore that Quarto Document and Checkpoint package does indeed contribute to help achieve reproducibility.
 
-The overarching goal of the Quarto
-Document and Checkpoint package is to enhance reproducibility by making 
-knowledge and techniques used in procedures of studies more widespread. 
-As discussed, reproducibility depends on, and is better replicated the more 
-details and information given regarding procedures and framework of an 
-experiment.
+## References
 
-The conclusion of the problem is therefore that Quarto Document and Checkpoint
-package does indeed contribute to help achieve reproducibility.
+::: {#refs}
+:::
 
-**Sources**
+\pagebreak[4]
 
-checkpoint: Configures R session to use packages as they existed on CRAN. 
-(2022, January 29) Retrieved from 
-https://rdrr.io/cran/checkpoint/man/checkpoint.html
+## Appendix
 
-About Quarto. Open source tools for scientific and technical publishing. 
-Retrieved from <https://quarto.org/about.html>
+Put in mine `sessionInfo()` since it was missing.
 
-checkpoint Install Packages from Snapshots on the Checkpoint Server for 
-Reproducibility. 
-Retrieved from https://CRAN.R-project.org/package=checkpoint
+```{r}
+#| echo: true
+#| eval: false
+sessionInfo()
+```
 
-
-=======
+    R version 4.2.1 (2022-06-23)
+    Platform: aarch64-apple-darwin20 (64-bit)
+    Running under: macOS Monterey 12.5.1
+    Matrix products: default
+    LAPACK: /Library/Frameworks/R.framework/Versions/4.2-arm64/
+    Resources/lib/libRlapack.dylib
+    locale:
+    [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+    attached base packages:
+    [1] stats     graphics  grDevices utils     datasets  methods   base     
+    loaded via a namespace (and not attached):
+    [1] compiler_4.2.1 tools_4.2.1    knitr_1.39     xfun_0.32     
